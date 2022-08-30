@@ -1,6 +1,10 @@
 const printSegitiga = (height) => {
   if (typeof height != "number") {
-    console.log("Data harus number");
+    console.log("Input must be number");
+    return;
+  }
+  if (height < 0) {
+    console.log("Input must be positive number");
     return;
   }
   let s = "";
